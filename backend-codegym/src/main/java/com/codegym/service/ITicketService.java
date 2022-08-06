@@ -19,4 +19,6 @@ public interface ITicketService {
     void remove(Ticket ticket);
 
     Page<Ticket> search(String startPoint, String endPoint, String startDate, String endDate, Pageable pageble);
+
+    void findName();
 }
