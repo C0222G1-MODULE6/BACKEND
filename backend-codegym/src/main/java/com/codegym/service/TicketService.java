@@ -12,6 +12,7 @@ import java.util.Optional;
 
 @Service
 public class TicketService implements ITicketService {
+
     @Autowired
     private ITicketRepository iTicketRepository;
 
@@ -44,6 +45,16 @@ public class TicketService implements ITicketService {
     @Override
     public Page<Ticket> search(String startPoint, String endPoint, String startDate, String endDate, Pageable pageble) {
         return iTicketRepository.search("%" + startPoint + "%", "%" + endPoint + "%", startDate, endDate, pageble);
+    }
+
+    @Override
+    public void findName() {
+
+    }
+
+    @Override
+    public void getTicketById(Integer id) {
+        System.out.println("new method");
     }
 
 }
