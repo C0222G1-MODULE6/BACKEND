@@ -16,11 +16,6 @@ public class TicketService implements ITicketService {
     private ITicketRepository iTicketRepository;
 
     @Override
-    public Page<Ticket> findAll(Pageable pageble) {
-        return iTicketRepository.findAll(pageble);
-    }
-
-    @Override
     public List<Ticket> findAll() {
         return null;
     }
