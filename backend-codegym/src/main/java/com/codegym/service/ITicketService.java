@@ -22,6 +22,7 @@ public interface ITicketService {
 
     void findName();
 
-    void getTicketById(Integer id);
+    void findHieu();
 
+    void getTicketById(Integer id);
 }
