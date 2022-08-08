@@ -21,4 +21,6 @@ public interface ITicketService {
     Page<Ticket> search(String startPoint, String endPoint, String startDate, String endDate, Pageable pageble);
 
     void findName();
+
+    void findHieu();
 }
