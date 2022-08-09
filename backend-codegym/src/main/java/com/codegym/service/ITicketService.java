@@ -25,4 +25,6 @@ public interface ITicketService {
     void findHieu();
 
     void getTicketById(Integer id);
+
+    void newMethodToday();
 }
